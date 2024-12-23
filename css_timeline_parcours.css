@@ -1,0 +1,218 @@
+/*Style général  */
+body {
+  background-color: #03293d;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  margin: 0 15%;
+  background-color: #03293d;
+  padding: 2em;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Barre de navigation  */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 1em;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #ff6347;
+  text-decoration: underline;
+}
+
+/* Conteneur principal*/
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Bandeaux latéraux */
+.side-banner {
+  width: 15%; /* Ajustez la largeur selon votre préférence */
+  min-height: 100vh; /* Hauteur égale à la page */
+  background-image: url('data.png'); /* Chemin de votre image */
+  background-size: cover; /* Ajuste l'image pour couvrir le bandeau */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Bandeau gauche */
+.side-banner.left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* Bandeau droit */
+.side-banner.right {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/*  Timeline */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+} 
+.timeline {
+  width: 100%;
+  min-height: 480px; 
+  padding: 20px;
+  position: relative;
+  box-sizing: border-box;
+  background: #03293d;
+  border-radius: 20px;
+  overflow: auto;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/*  Blocs des événements  */
+.timeline-content {
+  max-width: 300px;
+  height: 200px;
+  padding: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: #FFF;
+  color: #333;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Titre de chaque événement dans la timeline */
+.timeline-title {
+  font-size: 1.3em; 
+  font-weight: bold; 
+  color: #333; 
+  margin-bottom: 10px;
+  text-transform: uppercase; 
+}
+
+/* Trait de liaison de chaque événement */
+.timeline-content:before {
+  position: absolute;
+  width: calc(100% + 14px);
+  height: 4px;
+  top: calc(100% + 10px);
+  background: #FFF;
+  content: "";
+  left: -7px;
+  border-radius: 5px;
+}
+
+.timeline-content:after {
+  position: absolute;
+  width: 4px;
+  height: 25px;
+  top: 100%;
+  left: calc(50% - 10px);
+  background: #FFF;
+  content: "";
+}
+
+/* Dates des événements*/
+.timeline-period {
+  position: absolute;
+  top: calc(100% + 25px);
+  font-weight: bold;
+  background: #FFF;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  left: calc(50% - 60px);
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+/* Point de chaque événement */
+.timeline-period:before {
+  width: 15px;
+  height: 15px;
+  background: #FFF;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: calc(50% - 6px);
+  z-index: 2;
+}
+
+/* Position des éléments */
+.timeline-content:nth-child(even) {
+  align-self: flex-end;
+}
+
+.timeline-content:nth-child(even):before {
+  top: -15px; 
+}
+
+.timeline-content:nth-child(even):after {
+  top: -25px;
+}
+
+.timeline-content:nth-child(even) .timeline-period {
+  top: -60px;
+}
+
+.timeline-content:nth-child(even) .timeline-period:before {
+  top: calc(100% + 2px);
+}
+
+footer {
+  background: #333; 
+  color: #fff; 
+  text-align: center; 
+  padding: 1em 0; 
+  font-size: 0.9em; 
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
