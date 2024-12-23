@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets</title>
+    <link rel="stylesheet" href="css_projets.css">
+   
+    <!-- Barre de navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours académique</a></li>
+                <li><a href="experiences.html">Expériences professionnelles</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projet.html" class="active">Projets</a></li>
+                <li><a href="cv.html">Télécharger mon CV</a></li>  
+            </ul>
+        </nav>
+    </header>
+</head>
+
+
+<body>
+    <main> 
+        <section id="projets">
+            <div class="projet-section">
+                <h3>Création d'une base de données de journaux scientifiques</h3>
+                <p class="intro">Cliquez sur les titres pour afficher plus d'informations sur chaque projet.</p>
+                <div class="projet-item">
+                    <h4>Présentation du projet</h4>
+                    <div class="projet-item-content hidden">
+                        <p>Dans le cadre de mon cursus, j'ai dû créer une base de données de journaux scientifiques. 
+                            Ce projet consistait à concevoir une base de données pour gérer de manière pérenne et 
+                            optimale les informations relatives aux journaux scientifiques. L'objectif était de 
+                            stocker des informations telles que le nom du journal, son éditeur, son ISSN, les disciplines 
+                            couvertes, et les facteurs d’impact sur plusieurs années. Afin de mener à bien ce projet, 
+                            j'ai dû réaliser toutes les étapes menant à la création de la base. Tout d'abord la création 
+                            des fichiers de données, puis le design de la base via un schéma représentant les différentes 
+                            tables. Enfin, j'ai pu créer la base sur un logiciel et faire un certain nombre de requêtes SQL 
+                            permettant d'extraire des informations.</p>
+                    </div>
+                </div>
+                <div class="projet-item">
+                    <h4> Logiciels et langages utilisés</h4>
+                    <div class="projet-item-content hidden">
+                        <p>Pour mener à bien ce projet, j'ai utilisé le langage SQL créer mes tables ainsi que pour réaliser mes requêtes. 
+                            J'ai également dû maîtriser le logiciel DB Browser for SQLite pour la création de ma base de données. 
+                            J'ai également utilisé Excel pour la création de mes fichiers CSV de données. Enfin, pour concevoir le schéma de la base, 
+                            j'ai utilisé le logiciel web DB Designer, qui permet de créer des schémas de base avec les tables, 
+                            les types de colonnes et les relations entre les tables.                            
+                        </p>
+                        <div class="logo-item">
+                            <img src="image/sql-logo.png" alt="Logo SQL">  
+                            <img src="image/db.png" alt="Logo db">
+                            <img src="image/excel-logo.png" alt="Logo excel">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="projet-item">
+                    <h4>Résultat</h4>
+                    <div class="projet-item-content hidden">
+                        <img src="modele_base.png" alt="Illustration du projet base de données" class="result-image">
+                        <p>Comme vous pouvez le voir sur le schéma ci-dessus, j'ai réussi à mener à bien ce projet.
+                            J'ai développé ma base en SQL et j'ai réalisé un certain nombre de requêtes qui étaient demandées.
+                            Ce projet m'a permis de développer mes compétences en base de données et de mieux en cerner les enjeux.
+                            De plus, j'ai pu acquérir de nouvelles compétences en SQL, en effet, c'était ma première création de base en entier.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet-section">
+                <h3>Projet R : Exploitation de forums Reddit et tokenisation</h3>
+                <p class="intro">Cliquez sur les titres pour afficher plus d'informations sur chaque projet.</p>
+                <div class="projet-item">
+                    <h4>Présentation du projet</h4>
+                    <div class="projet-item-content hidden">
+                        <p>Le projet d'exploitation des données Reddit visait à analyser des données extraites de forums Reddit. Ces forums portaient sur des problématiques d'addictions. 
+                            Ces données, issues de plusieurs fichiers CSV contenant des informations sur les publications des forums, ont été réunies dans un seul DataFrame permettant leur utilisation. 
+                            Le but était d'explorer, manipuler et visualiser les données pour répondre à diverses questions analytiques. Après avoir mis en forme les données, j'ai pu réaliser des visualisations afin
+                            de les explorer, puis l'objectif final était la réalisation de nuages de mots à partir de la tokenisation des posts. 
+                        </p>
+                    </div>
+                </div>
+                <div class="projet-item">
+                    <h4>Logiciels et langages utilisés</h4>
+                    <div class="projet-item-content hidden">
+                        <p>Le projet a été réalisé en utilisant le langage R dans un environnement R Markdown, permettant la réalisation d'un rapport. 
+                            Plusieurs packages R ont été employés pour les manipulations et visualisations de données.<br>
+                            Pour la gestion et transformation des données : dplyr, lubridate, stringr.<br>
+                            Pour la visualisation des données : ggplot2.<br>
+                            Pour l'analyse de texte, la tokenisation et la création de nuages de mots : tidytext, tm, wordcloud, RColorBrewer.<br>
+                            Ces outils permettent à la fois une gestion efficace des données, des analyses statistiques approfondies, et des représentations graphiques lisibles.
+                        </p>
+                        <div class="logo-item">
+                            <img src="image/ggplot-logo.png" alt="Logo SQL">  
+                            <img src="image/r-logo.png" alt="Logo db">
+                        </div>   
+                    </div>
+                </div>
+                <div class="projet-item">
+                    <h4>Résultats</h4>
+                    <div class="projet-item-content hidden">
+                        <p>Les résultats de ce projet étaient de différentes formes.
+                            Des visualisations telles que la distribution des posts par jour et par heure, ou encore des nuages de mots pour identifier les thèmes récurrents.
+                            Une analyse statistique (test de Kruskal-Wallis) qui a montré l’absence de différence significative dans la longueur des posts en fonction des créneaux horaires.
+                            Une méthode flexible pour générer des nuages de mots personnalisables grâce à une fonction dédiée prenant en compte des mots exclusifs spécifiques.
+                            Ces résultats ont été compilés dans un rapport HTML, offrant une présentation claire et visuelle des analyses réalisées. 
+                            Ce projet m'a permis de me perfectionner en data management et en visualisation. J'ai pu également me familiariser avec la tokenisation et découvrir les 
+                            nombreuses possibilités qu'offre cette méthode. En effet, cela a permis de faire ressortir clairement les sujets les plus fréquents dans les forums, ce qui
+                            est très utile notamment pour orienter des sujets de recherche. Les deux nuages de mots présents ci-dessous sont le résultat final du travail de tokenisation réalisé
+                            sur les données des forums. Ces nuages de mots ont permis de faire ressortir les grandes idées des forums.
+                        </p>
+                        <img src="image/nuage1.png" alt="Illustration du projet base de données" class="result-image2">
+                        <img src="image/nuage2.png" alt="Illustration du projet base de données" class="result-image2">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Léo-Paul MARTIN - Tous droits réservés</p>
+    </footer>
+
+    <!-- JavaScript pour le comportement interactif -->
+    <script>
+        document.querySelectorAll(".projet-item h4").forEach(titre => {
+            titre.addEventListener("click", () => {
+                const content = titre.nextElementSibling;
+                if (content) {
+                    content.classList.toggle("hidden");
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
